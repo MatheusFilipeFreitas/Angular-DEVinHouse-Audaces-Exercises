@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+  align-self: flex-start;
+}
+
+.green {
+  background-color: green;
+  align-self: flex-end;
+}

@@ -1,0 +1,251 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #0f0f0f;
+  width: 100vw;
+  height: 100%;
+}
+
+header {
+  background-color: #0f0f0f;
+  width: 100vw;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px 10px 25px;
+  color: #aaa;
+}
+
+header #start {
+  width: 150px;
+}
+
+header #start button {
+  background-color: #0f0f0f;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+}
+
+header #start button:hover {
+  border-radius: 100%;
+  background-color: #71717150;
+  cursor: pointer;
+  border: 1px solid #222222;
+}
+
+header #start, header #middle, header #end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #middle .input-search {
+  border: 1px solid rgba(170, 170, 170, 0.244);
+  border-radius: 20px;
+  width: 478px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #middle .input-search input {
+  border: none;
+  background-color: #0f0f0f;
+  font-size: 15px;
+  width: 370px;
+  height: 30px;
+  margin-left: 13px;
+  outline: none;
+  color: #aaa;
+}
+
+header #middle .input-search button {
+  background-color: #71717150;
+  cursor: pointer;
+  border: 1px solid #222222;
+  width: 60px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid rgba(170, 170, 170, 0.181);
+}
+
+header #middle #microfone {
+  background-color: #181818;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  margin-left: 5px;
+  border-radius: 100%;
+}
+
+header #middle #microfone:hover {
+  background-color: #71717150;
+  cursor: pointer;
+  border: 1px solid #222222;
+}
+
+header #end {
+  width: 120px;
+  margin-right: 15px;
+}
+
+header #end button {
+  background-color: #0f0f0f;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+header #end button:hover {
+  border-radius: 100%;
+  background-color: #71717150;
+  cursor: pointer;
+  border: 1px solid #222222;
+}
+
+header #end img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 10px
+}
+
+header #end img:hover {
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+main #left {
+  height: 100vh;
+  width: 67%;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+main #left iframe {
+  width: 100%;
+  min-width: 530px;
+  height: 38vw; 
+  max-height: 680px;
+  min-height: 300px;
+}
+
+main #left .hashtag-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+main a {
+  font-size: 11px;
+  text-decoration: none;
+  color: rgb(0, 170, 255);
+  margin-right: 5px;
+}
+
+main #left h2 {
+  font-size: 16px;
+  color: white;
+}
+
+main #left #profile-area {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+main #left #profile-area img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+main #left #profile-area .profile-resume {
+  margin-left: 15px;
+  width: 150px;
+}
+
+main #left #profile-area .profile-resume h3 {
+  font-size: 14px;
+}
+
+main #left #profile-area .profile-resume p {
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  color: #aaa;
+}
+
+main #left button {
+  background-color: #71717150;
+  border: none;
+  border-radius: 18px;
+  height: 35px;
+  padding: 5px 15px;
+  margin-right: 13px;
+  color: white;
+  font-size: 14px;
+}
+
+main #left button:hover {
+  background-color: #9494946d;
+  cursor: pointer;
+}
+
+main #left #subscribe {
+  background-color: white;
+  color: rgb(34, 34, 34);
+}
+
+main #left #subscribe:hover {
+  background-color: rgba(255, 255, 255, 0.825);
+}
+
+main #left #description {
+  color: white;
+  margin-top: 12px;
+  background-color: #71717150;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
