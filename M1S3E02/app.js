@@ -1,8 +1,8 @@
 document.getElementById('botao').addEventListener('click', function () {
-  mensagemOla();
+  mensagemOla(nome);
 });
 
-function mensagemOla() {
+function mensagemOla(nome) {
   var nome = document.getElementById('nome').value;
   if (nome != '') {
     document.getElementById('resultado').innerHTML = `Olá, ${nome}!`;
