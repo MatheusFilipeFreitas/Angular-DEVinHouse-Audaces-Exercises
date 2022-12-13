@@ -3,7 +3,7 @@ document.getElementById('botao').addEventListener('click', function () {
 });
 
 function mensagemOla(nome) {
-  var nome = document.getElementById('nome').value;
+  var nome = document.getElementById('nome').value.trim();
   if (nome != '') {
     document.getElementById('resultado').innerHTML = `Olá, ${nome}!`;
   } else {
