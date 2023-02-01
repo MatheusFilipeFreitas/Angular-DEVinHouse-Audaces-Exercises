@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="./js/app.js" type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="form">
+            <div class="img-field">
+                <img src="https://w7.pngwing.com/pngs/411/956/png-transparent-customer-login-avatar-head-portrait-client-user.png" alt="login-img">
+            </div>
+            <div class="input-field">
+                <label for="inputEmail">Email:</label>
+                <input type="email" name="inputEmail" id="inputEmail" placeholder="example@email.com">
+            </div>
+            <div class="input-field">
+                <label for="inputPassword">Password:</label>
+                <input type="password" name="inputPassword" id="inputPassword" placeholder="Password"> 
+            </div>
+            
+            <div class="button-field">
+                <button type="submit" id="buttonSubmit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="response-container">
+        <p id="response"></p>
+    </div>
+</body>
+</html>

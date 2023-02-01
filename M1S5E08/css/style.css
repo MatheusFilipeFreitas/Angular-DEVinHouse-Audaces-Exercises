@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(25, 25, 31);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    padding: 50px; 
+    border: 2px solid blue;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container .img-field img {
+    width: auto;
+    height: 80px;
+    margin-bottom: 30px;
+    mix-blend-mode: multiply;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.input-field input {
+    border: none;
+    padding: 10px;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.button-field, .img-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button  {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
