@@ -52,9 +52,11 @@ import Funcionario from "./Funcionario.js";
 //     }
 // }
 
-const ada = new Funcionario("528.442.040-31", "Ada Lovelace", 1000);
+const ada = new Funcionario("12345678910", "Ada Lovelace", 1000);
 
 console.log(ada.salario); // 1000
+
+console.log(ada);
 
 ada.promover(50);
 
