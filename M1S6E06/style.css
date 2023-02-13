@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 48, 47);
+}
+
+.search-container {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid gray;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-container .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-container label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.search-container input {
+  padding: 5px 12px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;;
+}
+
+button {
+  padding: 8px 2px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 110, 245);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(3, 88, 192);
+}
+
+.results {
+  color: white;
+  font-weight: 600;
+}
+

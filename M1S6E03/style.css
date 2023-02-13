@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 40, 70);
+  padding: 30px;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  color: white;
+  margin: 8px;
+}

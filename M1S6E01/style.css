@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Jost;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #676666;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#number-form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #363636;
+  border-radius: 3px;
+  width: 235px;
+  height: 145px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px 30px;
+}
+
+.top-window {
+  background-color: #363636;
+  width: 233px;
+  height: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+  padding: 0px 5px;
+}
+
+.top-window .circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+}
+
+.top-window .red{
+  background-color: rgb(201, 58, 58);
+}
+
+.top-window .green {
+  background-color: rgb(43, 166, 43);
+}
+
+.top-window .yellow {
+  background-color: rgb(217, 217, 58);
+}
+
+#number-form #input-number {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+#number-form #btn-submit {
+  background-color: rgb(22, 100, 224);
+  color: white;
+  border: none;
+  padding: 10px 0px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#number-form #btn-submit:hover {
+  background-color: rgb(18, 82, 185);
+}
+
+#log {
+  background-color: #363636;
+  min-height: 200px;
+  width: 235px;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 0px 0px;
+}
+
+#result {
+  width: 235px;
+  height: 135px;
+  padding: 10px 20px;
+}
+
+p {
+  margin-top: 4px;
+}

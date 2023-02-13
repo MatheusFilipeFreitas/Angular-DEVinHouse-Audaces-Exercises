@@ -1,3 +1,16 @@
+function clearScreen() {
+  const p = document.getElementsByTagName('p');
+  for (let i = p.length - 1; i >= 0; i--) {
+    p[i].parentNode.removeChild(p[i]);
+  }
+}
+
+function displayOnScreen(result) {
+  const p = document.createElement('p');
+  p.innerText = `$: ${result}`;
+  document.body.appendChild(p);
+}
+
 function aprovarDadosCadastrais(cliente) {
   return new Promise((resolve, reject) => {
     if (cliente.cpf === 11111111111) resolve(true);
@@ -16,30 +29,13 @@ const cliente = { cpf: 11111111111, nome: 'Calleri', margem: 1000.0 };
 const aprovacaoCadastro = aprovarDadosCadastrais(cliente);
 const aprovacaoValor = aprovarValorSolicitado(cliente, 300.0);
 
-aprovacaoCadastro
+Promise.all([aprovacaoCadastro, aprovacaoValor])
   .then(() => {
-    console.log('APROVAÇÃO DADOS:');
-    console.log('APROVADO');
+    displayOnScreen('Aprovado');
   })
   .catch(() => {
-    console.log('APROVAÇÃO DADOS:');
-    console.log('REPROVADO');
+    displayOnScreen('Reprovado');
   })
   .finally(() => {
-    console.log('APROVAÇÃO DADOS:');
-    console.log('Fim do Processamento');
-  });
-
-aprovacaoValor
-  .then(() => {
-    console.log('APROVAÇÃO VALOR:');
-    console.log('APROVADO');
-  })
-  .catch(() => {
-    console.log('APROVAÇÃO VALOR:');
-    console.log('REPROVADO');
-  })
-  .finally(() => {
-    console.log('APROVAÇÃO VALOR:');
-    console.log('Fim do Processamento');
+    displayOnScreen('Fim do processamento');
   });
