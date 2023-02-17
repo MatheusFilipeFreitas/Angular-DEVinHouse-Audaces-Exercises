@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-galery',
@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaleryComponent implements OnInit{
 
-  images: string[] = [];
+  @Input() public images: string[] = [];
   imageUrl: string = '';
+
 
   ngOnInit(): void {
     this.addUrlToImages();
@@ -16,9 +17,9 @@ export class GaleryComponent implements OnInit{
   }
 
   addUrlToImages() {
-    this.images.push(`https://images7.alphacoders.com/129/1292566.png`);
-    this.images.push(`https://www.pixel4k.com/wp-content/uploads/2020/08/netflix-cyberpunk-edgerunners-2022_1596931673.jpg`);
-    this.images.push(`https://i.pinimg.com/originals/65/98/c5/6598c52a98f39ac51b60a4f47fed457f.jpg`);
+    this.images.push(`assets/images/photo1.png`);
+    this.images.push(`assets/images/photo2.jpg`);
+    this.images.push(`assets/images/photo3.jpg`);
   }
 
   goToFirstImage() {
